@@ -1,0 +1,14 @@
+<section>
+  <h1>Consulta Saldo</h1>
+  <header>
+    <div>
+      Ultimo login: {{ cliente.ultimoLogin | date}}
+    </div>
+    <div>
+      Client: {{ cliente.nome | uppercase }}
+    </div>
+    <div>
+      Saldo: {{ cliente.saldo | currency: 'BRL'}}
+    </div>
+  </header>
+</section>
