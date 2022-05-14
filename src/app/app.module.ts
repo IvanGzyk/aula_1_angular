@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { ConsultaSaldoComponent } from './components/consulta-saldo/consulta-saldo.component';
 import localPt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ClasNamePorValorPipe } from './pipes/clas-name-por-valor.pipe';
+import { PokerComponent } from './components/poker/poker.component';
 
 registerLocaleData(localPt, 'pt-BR');
 @NgModule({
   declarations: [
     AppComponent,
     ConsultaSaldoComponent,
+    PokerComponent,
+    ClasNamePorValorPipe,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,50 @@
+.nipe {
+  font-size: 2rem;
+  height: 40px;
+}
+
+.left {
+  align-self: flex-start;
+  margin: 0%;
+}
+
+.right {
+  align-self: flex-end;
+  margin: 0%;
+  float: right;
+}
+
+.carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  height: 220px;
+  margin: 0%;
+}
+
+.baralho {
+  display: flow-root;
+  height: 300px;
+  width: 200px;
+  background-color:rgb(250, 250, 250);
+}
+
+.color_red {
+  color: red;
+}
+
+.color_black {
+  color: black;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+

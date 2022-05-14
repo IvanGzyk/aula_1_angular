@@ -10,8 +10,11 @@ export class ConsultaSaldoComponent implements OnInit {
   public cliente: Cliente = new Cliente(
     new Date(),
     'Maria candida',
-    850.00,
-  )
+    800.00,
+  );
+
+
+
   constructor(
 
   ) {

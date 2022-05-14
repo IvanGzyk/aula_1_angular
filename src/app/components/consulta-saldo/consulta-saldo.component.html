@@ -8,7 +8,9 @@
       Client: {{ cliente.nome | uppercase }}
     </div>
     <div>
-      Saldo: {{ cliente.saldo | currency: 'BRL'}}
+      <span [class]= "cliente.saldo | clasNamePorValor">
+        Saldo: {{ cliente.saldo | currency: 'BRL'}}
+      </span>
     </div>
   </header>
 </section>

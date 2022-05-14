@@ -22,4 +22,15 @@ describe('ConsultaSaldoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('deveria apontar classe 0 para zero', () => {
+    expect(component.classNamePorValor(0)).toBe('zero');
+    expect(component.classNamePorValor(0.001)).toBe('zero');
+    expect(component.classNamePorValor(0.0099)).toBe('zero');
+  });
+
+  it('deveria apontar classe -1 para negativo', () => {
+    expect(component.classNamePorValor(-1)).toBe('negativo');
+    expect(component.classNamePorValor(-0.1)).toBe('negativo');
+  });
 });

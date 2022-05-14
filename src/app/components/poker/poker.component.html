@@ -1,0 +1,37 @@
+<section>
+  <h1>Poker</h1>
+  <header>
+    <div>
+      <table class="table">
+        <tr>
+          <button (click)="alteraNipe('A')">A</button>
+          <button (click)="alteraNipe('2')">2</button>
+          <button (click)="alteraNipe('3')">3</button>
+          <button (click)="alteraNipe('4')">4</button>
+          <button (click)="alteraNipe('5')">5</button>
+          <button (click)="alteraNipe('6')">6</button>
+          <button (click)="alteraNipe('6')">7</button>
+          <button (click)="alteraNipe('8')">8</button>
+          <button (click)="alteraNipe('9')">9</button>
+          <button (click)="alteraNipe('10')">10</button>
+          <button (click)="alteraNipe('J')">J</button>
+          <button (click)="alteraNipe('Q')">Q</button>
+          <button (click)="alteraNipe('K')">K</button>
+        </tr>
+        <tr>
+          <button (click)="alteraBaralho('♥')">♥</button>
+          <button (click)="alteraBaralho('♠')">♠</button>
+          <button (click)="alteraBaralho('♦')">♦</button>
+          <button (click)="alteraBaralho('♣')">♣</button>
+          <button class="red" (click)="mudaCor('red')">RED</button>
+          <button class="black" (click)="mudaCor('black')">BLACK</button>
+        </tr>
+      </table>
+    </div>
+    <div class="baralho" [ngClass]="[corStyle]">
+      <p class="nipe left">{{jogoPoker.nipe}}</p>
+      <p class="carta">{{jogoPoker.carta}}</p>
+      <p class="nipe right">{{jogoPoker.nipe}}</p>
+    </div>
+  </header>
+</section>
